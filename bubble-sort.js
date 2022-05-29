@@ -17,7 +17,7 @@ const bubbleSort = (array) => {
       }
     }
 
-    // eğer hiç iki öğe içerdeki döngüde yer değiştirmediyse döngüden çıkıyoruz.
+    // eğer herhangi iki öğe, içerdeki döngüde yer değiştirmediyse döngüden çıkıyoruz.
     if (!isSwapped) break;
   }
 
