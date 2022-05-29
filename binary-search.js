@@ -9,16 +9,13 @@ const binarySearch = (sortedArray, key) => {
     // ortadaki öğeyi buluyoruz.
     let middle = Math.floor((low + high) / 2);
 
-    if (sortedArray[middle] === key) {
-      // ortadaki değerin, aranmasını istediğimiz değere eşit olup olmadığını sorguluyoruz, eğer eşitse arama yapılan değerin index'ini dönüyor.
+    // ortadaki değerin, aranmasını istediğimiz değere eşit olup olmadığını sorguluyoruz, eğer eşitse arama yapılan değerin index'ini dönüyor.
+    if (sortedArray[middle] === key)
       return console.log(`Aradığınız değerin index'i: ${middle}`);
-    } else if (sortedArray[middle] < key) {
-      // eğer ortadaki değer, aranan değerden küçükse, diziyi ikiye bölerek dizinin sol kısmını aramayı bırakıyor, burada en düşük değeri, ortadaki değere eşitledik.
-      low = middle + 1;
-    } else {
-      // aynı şekilde ortadaki değer, aranan değerden büyükse dizinin sağ tarafını aramayı bırakıyor, en büyük değeri ortadaki değere eşitliyor.
-      high = middle - 1;
-    }
+    // eğer ortadaki değer, aranan değerden küçükse, diziyi ikiye bölerek dizinin sol kısmını aramayı bırakıyor, burada en düşük değeri, ortadaki değere eşitledik.
+    else if (sortedArray[middle] < key) low = middle + 1;
+    // aynı şekilde ortadaki değer, aranan değerden büyükse dizinin sağ tarafını aramayı bırakıyor, en büyük değeri ortadaki değere eşitliyor.
+    else high = middle - 1;
   }
 
   // eğer aranan değer listede yoksa bir uyarı mesajı döndürüyoruz.

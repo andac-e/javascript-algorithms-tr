@@ -1,4 +1,4 @@
-// Merge Sort 'Parçala ve Fethet (Divide and Conquer)' yaklaşımı ile çalışan bir sıralama algoritmasıdır. Sıralanmasını istediğimiz veri kaynağını, ikişer elemanı kalan parçalar haline getirene kadar sürekli olarak ikiye böler. Daha sonra bu parçaları içlerinde sıralayarak birleştirir.
+// Merge Sort 'Parçala ve Fethet (Divide and Conquer)' yaklaşımı ile çalışan bir sıralama algoritmasıdır. Sıralanmasını istediğimiz veri kaynağını, tek elemanlı parçalar haline getirene kadar sürekli olarak böler. Daha sonra bu parçaları aralarında sıralayarak birleştirir.
 
 // mergeSort fonksiyonu ile ana diziyi parçalarına ayırıp her elemanı tek elemanlı bir dizi haline getirip merge fonksiyonu ile bunları sıralayıp birleştireceğiz.
 const merge = (left, right) => {
