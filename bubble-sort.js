@@ -1,0 +1,1 @@
+// Bubble Sort karşılaştırma temelli bir algoritmadır. Veri kaynağındaki her elemanın yanındaki eleman ile karşılaştırılmasına dayanan, ilk elemanın değerinin ikinci elemandan büyük olması durumunda yer değiştirip, tüm veri kaynağı sıralanana kadar devam eden bir algoritmadır.
