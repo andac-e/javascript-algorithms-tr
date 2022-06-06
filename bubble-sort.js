@@ -30,5 +30,4 @@ const bubbleSort = (array) => {
   return [...new Set(array)];
 };
 
-let array = [2, 4, 12, 11, 5, 3, 1, 9, 2, 2, 1, 1, 2];
-console.log(bubbleSort(array));
+console.log(bubbleSort([2, 4, 12, 11, 5, 3, 1, 9, 2, 2, 1, 1, 2]));

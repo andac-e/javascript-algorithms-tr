@@ -32,7 +32,5 @@ const mergeSort = (array) => {
   return merge(mergeSort(left), mergeSort(right));
 };
 
-array = [4, 8, 7, 2, 11, 1, 3];
-console.log(mergeSort(array)); // çıktı: [1, 2, 3, 4, 7, 8, 11]
-array2 = ["z", "c", "f", "i", "a", "o"];
-console.log(mergeSort(array2)); // çıktı: ['a', 'c', 'f', 'i', 'o', 'z']
+console.log(mergeSort([[4, 8, 7, 2, 11, 1, 3]]));
+console.log(mergeSort(["z", "c", "f", "i", "a", "o"]));

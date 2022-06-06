@@ -22,7 +22,6 @@ const binarySearch = (sortedArray, key) => {
   return console.log("Aradığınız değer dizide bulunmuyor.");
 };
 
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-binarySearch(array, 2); // çıktı: Aradığınız değerin index'i: 1
-binarySearch(array, 10); // çıktı: Aradığınız değerin index'i: 9
-binarySearch(array, 15); // çıktı: Aradığınız değer dizide bulunmuyor.
+binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2);
+binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10);
+binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 15);
