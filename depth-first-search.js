@@ -1,4 +1,4 @@
-// Depth First Search (Derinlik Öncelikli Arama) algoritması graflar ve ağaçlarda (tree traversal) arama işlemi gerçekleştiren bir algoritmadır. Başlangıç noktası (node) belirledikten sonra bu node'un komşuları gezilmeye başlanır. Her seferde bağlantı olan bir komşuya bakılır ve bu komşuyu yığına (stack) ekler, ardından buradan gezilmemiş olan diğer komşuya gider, algoritma rekürsif bi şekilde çalıştığı için gidilecek yer kalmadığında o noktadan önceki node'a geri döner ve gezilmemiş yerler var mı diye kontrol eder.
+// Depth First Search (Derinlik Öncelikli Arama) algoritması graflar ve ağaçlarda (graph/tree traversal) arama işlemi gerçekleştiren bir algoritmadır. Başlangıç noktası (root node) belirledikten sonra bu node'un komşuları gezilmeye başlanır. Her seferde bağlantı olan bir komşuya bakılır ve bu komşuyu yığına (stack) ekler, ardından buradan gezilmemiş olan diğer komşuya gider, algoritma rekürsif bi şekilde çalıştığı için gidilecek yer kalmadığında o noktadan önceki node'a geri döner ve gezilmemiş yerler var mı diye kontrol eder.
 
 //    A----B----C
 //    |\       /|
@@ -71,7 +71,7 @@ const dfs = (start, goal, visited = new Set()) => {
   // burada bağlantıları kontrol etmek üzere destinations adında bir iterasyon oluşturuyoruz.
   const destinations = vertices.get(start);
 
-  // tüm bağlantılar arasında geziyoruz, eğer bulursak fonksiyondan çıkıp hedefin bulunduğuna dair bir mesaj yazdırıyoruz.
+  // tüm bağlantılar arasında geziyoruz, eğer bulursak iterasyondan çıkıp hedefin bulunduğuna dair bir mesaj yazdırıyoruz.
   for (const destination of destinations) {
     if (destination === goal) {
       console.log(`DFS found ${goal}`);
