@@ -78,3 +78,10 @@ const bfs = (start, goal) => {
 };
 
 bfs("IZMIR", "SYDNEY");
+// çıktımız şu şekilde olacaktır:
+
+// IZMIR
+// ISTANBUL
+// ANKARA
+// SYDNEY
+// BFS found SYDNEY
